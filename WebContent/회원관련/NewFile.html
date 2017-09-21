@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title></title>
+
+<style>
+
+html, body {margin: 0; padding: 0; position: relative; height: 5000px;}
+
+div {cursor: pointer; text-align: center;}
+
+footer {position: absolute; bottom: 0; height: 100px; width: 100%;}
+
+</style>
+
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<script>
+
+var gotothebookmark = function(target) {
+
+$('html, body').animate({
+
+scrollTop: $(target).offset().top
+
+}, 700);
+
+return false;
+
+} 
+
+</script>
+
+</head>
+
+<body>
+
+<div onclick="gotothebookmark('footer')">내려가기</div>
+
+<footer></footer>
+
+</body>
+
+</html>
